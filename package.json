@@ -1,8 +1,15 @@
 {
-  "name": "vite-react-chakra-starter",
-  "version": "0.1.0",
-  "private": true,
-  "author": "sozonome",
+  "name": "pioneer-library-example",
+  "version": "0.1.4",
+  "author": "highlander",
+  "main": "dist/my-library.umd.js",
+  "module": "dist/my-library.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-library.es.js",
+      "require": "./dist/my-library.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "pnpm type-check && vite build",
@@ -26,9 +33,11 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/plus-jakarta-sans": "^5.0.17",
     "framer-motion": "^10.16.4",
-    "million": "2.6.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "million": "2.6.4"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.18.0"
