@@ -6,6 +6,8 @@
 import '@fontsource/plus-jakarta-sans/latin.css';
 
 import HelloWorldButton from '~/lib/components/button';
+
+import { PioneerProvider, usePioneer } from '~/lib/context/Pioneer';
 // import { theme } from '~/lib/styles/theme';
 //
 // import App from './App';
@@ -20,7 +22,5 @@ import HelloWorldButton from '~/lib/components/button';
 //   </React.StrictMode>
 // );
 
-const foo = 'bar';
-
 // export default foo;
-export { foo, HelloWorldButton };
+export { PioneerProvider, usePioneer, HelloWorldButton };
