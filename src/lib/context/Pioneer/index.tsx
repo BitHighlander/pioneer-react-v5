@@ -16,7 +16,7 @@
                                               - Highlander
 
 */
-import EventEmitter from 'events';
+import EventEmitter from 'eventemitter3';
 import {
   createContext,
   useContext,

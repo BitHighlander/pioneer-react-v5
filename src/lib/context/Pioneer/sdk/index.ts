@@ -23,7 +23,7 @@ import {
   getPaths,
   // @ts-ignore
 } from '@pioneer-platform/pioneer-coins';
-import EventEmitter from 'events';
+import EventEmitter from 'eventemitter3';
 
 import { initializeWallets } from './connect';
 import { availableChainsByWallet } from './support';

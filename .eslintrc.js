@@ -13,12 +13,7 @@ module.exports = {
     'no-shadow': 'off',
     'react/jsx-no-bind': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
-    '@typescript-eslint/ban-ts-comment': [
-      'warn',
-      {
-        'ts-ignore': 'allow-with-description',
-      },
-    ],
+    '@typescript-eslint/ban-ts-comment': 'off',
     'prettier/prettier': 'error', // Enable Prettier as an ESLint rule
   },
 };
